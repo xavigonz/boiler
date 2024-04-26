@@ -14,7 +14,7 @@ export default function Home({ navigation }) {
     <ScrollView>
       <View style={{flex: 1}}>
         {users.data.map((user, index) => (
-          <Card m="$3" gap="$2" my="$1.5" variant="outline" borderWidth={3}>
+          <Card key={index} m="$3" gap="$2" my="$1.5" variant="outline" borderWidth={3}>
             <Text>{user.full_name}</Text>
           </Card>
         ))}
